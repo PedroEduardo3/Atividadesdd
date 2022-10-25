@@ -1,0 +1,20 @@
+using static System.Console;
+List<string> nome = new List<string>(10);
+WriteLine("Digite 10 nomes");
+for (int i = 0; i < 10; i++)
+{
+    nome.Add(ReadLine());
+}
+Clear();
+nome.Sort();
+WriteLine();
+WriteLine("Os nomes foram:");
+foreach (var item in nome)
+{
+    WriteLine(item);
+}
+WriteLine();
+WriteLine("----------------------------------------------------------------------------------");
+WriteLine("O Primeiro nome foi: " + nome[0]);
+WriteLine("O Último nome foi: " + nome[9]);
+ReadKey();
