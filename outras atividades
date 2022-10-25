@@ -1,0 +1,45 @@
+
+    WriteLine(item2);
+}
+WriteLine();
+nome.Remove("novonome1");
+nome.RemoveAt(4);
+nome.RemoveRange(3, 2);
+foreach (var item3 in nome)
+{
+    WriteLine(item3);
+}
+WriteLine();
+int idx = nome.IndexOf("Ruth");
+if (idx >= 0)
+{
+    WriteLine($"Item na lista n°:{idx}");
+}
+else
+{
+    WriteLine("Item não encontrado!!!");
+}
+WriteLine();
+nome.Add("Brian");
+nome.Sort();
+foreach (var item4 in nome)
+{
+    WriteLine(item4);
+}
+WriteLine();
+nome.Reverse();
+foreach (var item5 in nome)
+{
+    WriteLine(item5);
+}
+WriteLine();
+foreach (var item6 in nome)
+{
+    WriteLine(item6);
+}
+WriteLine();
+nome[3] = "Josefa";
+foreach (var item7 in nome)
+{
+    WriteLine(item7);
+}
